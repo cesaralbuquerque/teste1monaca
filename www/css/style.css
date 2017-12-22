@@ -1,0 +1,27 @@
+/**/
+
+#pImg {
+    width: 100%;
+}
+
+#myImage {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    margin-top: 8px;
+}
+
+#content {
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+#audioRecord {
+    width: 80%;
+}
+
+#audioPlay {
+    width: 18%;
+}
