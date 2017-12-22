@@ -78,7 +78,7 @@ var app = {
             media.release();
         });
         media.play();
-        
+         
     },
     
     saveWeather: function(){
@@ -94,8 +94,8 @@ var app = {
            
             $.ajax
             ({
-                type: "POST",
-                url: "http://desenv.benner.com.br/siscon/teste",
+                type: "GET",
+                url: "http://desenv.benner.com.br/siscon/api/teste/1",
                 dataType: 'text',
                 async: false,
                 data: "teste",
@@ -106,7 +106,7 @@ var app = {
         })
         .fail(function(err)
         {
-           app.onFail(err)
+           app.onFail(err);
         });
         
     },
@@ -114,9 +114,7 @@ var app = {
     onFail: function(message){
         alert('Failed because: ' + message);
     },
-    
-    
-    
+
     init: function(){
         document.getElementById('cameraTakePicture').addEventListener('click', this.getCameraTakePicture, false);
         document.getElementById('getGeolocation').addEventListener('click', this.getGeolocation, false);
